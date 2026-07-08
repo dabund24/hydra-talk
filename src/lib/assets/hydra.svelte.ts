@@ -3,7 +3,7 @@ import Hydra from 'hydra-synth';
 export const hydraCanvas = document.createElement('canvas');
 
 document.querySelector('body')!.append(hydraCanvas);
-const hydra: unknown = new Hydra({
+export const hydra: unknown = new Hydra({
   canvas: hydraCanvas,
   makeGlobal: true,
   width: 1080,

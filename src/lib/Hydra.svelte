@@ -1,6 +1,6 @@
 <script lang="ts">
   // @ts-expect-error no types :/
-  import { hydraCanvas, resetHydraCanvas } from '$lib/assets/hydra.svelte.ts';
+  import { hydraCanvas, resetHydraCanvas, hydra } from '$lib/assets/hydra.svelte.ts';
 
   type Props = {
     isCurrentSlide: boolean;
@@ -17,7 +17,7 @@
       hush();
       resetHydraCanvas();
       try {
-        eval(hydraCode);
+        eval(hydraCode.replaceAll("render", "hydra.synth.render"));
         error = '';
       } catch (e) {
 				console.log(e)
