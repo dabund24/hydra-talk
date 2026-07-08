@@ -181,7 +181,7 @@ src(o1).mult(src(s0).modulateRotate(o1,100), -0.5)
       initialText={`gradient(0).out(o1)
 src(o1).out(o0)`}
     >
-      <div><code>src(buf)</code> enables using:</div>
+      <div><code>src(buf)</code> allows using:</div>
       <ul>
         <li class="blue">Output buffers</li>
         <li>Images</li>
@@ -197,7 +197,7 @@ src(o1).out(o0)`}
       initialText={`s0.initImage("Micromoog.jpg")
 src(s0).out(o0)`}
     >
-      <div><code>src(buf)</code> enables using:</div>
+      <div><code>src(buf)</code> allows using:</div>
       <ul>
         <li>Output buffers</li>
         <li class="blue">Images</li>
@@ -213,7 +213,7 @@ src(s0).out(o0)`}
       initialText={`s0.initVideo("haha.mp4")
 src(s0).out(o0)`}
     >
-      <div><code>src(buf)</code> enables using:</div>
+      <div><code>src(buf)</code> allows using:</div>
       <ul>
         <li>Output buffers</li>
         <li>Images</li>
@@ -228,7 +228,7 @@ src(s0).out(o0)`}
       initialText={`//s0.initScreen()
 src(s0).out(o0)`}
     >
-      <div><code>src(buf)</code> enables using:</div>
+      <div><code>src(buf)</code> allows using:</div>
       <ul>
         <li>Output buffers</li>
         <li>Images</li>
@@ -243,7 +243,7 @@ src(s0).out(o0)`}
       initialText={`s0.initCam()
 src(s0).out(o0)`}
     >
-      <div><code>src(buf)</code> enables using:</div>
+      <div><code>src(buf)</code> allows using:</div>
       <ul>
         <li>Output buffers</li>
         <li>Images</li>
