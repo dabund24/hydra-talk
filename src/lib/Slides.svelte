@@ -284,7 +284,7 @@ src(s0).out(o0)`}
                   'r + \\mathrm{amount}',
                   'g + \\mathrm{amount}',
                   'b + \\mathrm{amount}',
-                  '1'
+                  'a'
                 )}</Katex
               >
             </li>
@@ -312,7 +312,7 @@ src(s0).out(o0)`}
                   '\\sin(\\alpha)',
                   '-\\sin(\\alpha)',
                   '\\cos(\\alpha)'
-                )}</Katex
+                )}{vecTwo("x", "y")}</Katex
               >
             </li>
           </ul>
@@ -448,8 +448,8 @@ vec4 brightness(vec4 _c0, float amount) {
 
 void main() {
   vec2 st = gl_FragCoord.xy/resolution.xy;
-  vec4 c = gradient(st, speed0);
-  c = brightness(c, 0.5);
+  vec4 c = gradient(st, 0.5);
+  c = brightness(c, speed0);
   gl_FragColor = c;
 }`}
             lineWrapping={true}
@@ -466,7 +466,7 @@ void main() {
     <HydraSlideWithCode
       title="Extending Hydra"
       {currentSlide}
-      attribution="TODO"
+      attribution="Yoni Maltsman. Hydra-FCS. https://github.com/ymaltsman/Hydra-FCS"
       fontSize="1.5rem"
       initialText={`setFunction({
   name: 'iSpiral',
@@ -487,18 +487,11 @@ void main() {
     return vec4(u, u, u, 1.0);\`
 })
 
-iSpiral().out()`}
+//iSpiral().out()`}
     ></HydraSlideWithCode>
 
     <Slide title="Thank You!">
-      <div>Some nice tools:</div>
-      <ul>
-        <li>Hydra</li>
-        <li>Svelte</li>
-        <li>Reveal.js</li>
-        <li>Codemirror</li>
-        <li><Katex>\KaTeX{'{}'}</Katex></li>
-      </ul>
+      <div></div>
     </Slide>
   </div>
 </div>
