@@ -1,7 +1,5 @@
 <script lang="ts">
   import Reveal from 'reveal.js';
-  import Markdown from 'reveal.js/plugin/markdown';
-  import Highlight from 'reveal.js/plugin/highlight';
   import Katex from 'svelte-katex';
   import { onMount } from 'svelte';
 
@@ -34,9 +32,7 @@
       disableLayout: true,
       progress: false
     });
-    deck.initialize({
-      plugins: [Markdown, Highlight]
-    });
+    deck.initialize();
     // @ts-expect-error currentSlide not typed
     deck.on('slidechanged', (e) => (currentSlide = e.currentSlide));
   });
