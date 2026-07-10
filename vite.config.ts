@@ -24,8 +24,5 @@ export default defineConfig({
       '@codemirror/language-javascript',
       '@codemirror/state'
     ]
-  },
-  build: {
-    minify: false
   }
 });
